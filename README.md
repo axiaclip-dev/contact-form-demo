@@ -30,8 +30,8 @@
 ```bash
 contact-form-demo/
   |- assets/
+  |- css/
   |- index.html
-  |- style.css
   |- .gitignore
   |- README.md
 ```

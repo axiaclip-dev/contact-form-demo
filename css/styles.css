@@ -24,6 +24,8 @@ body {
 
 .wrapper {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(
     to bottom,
     var(--gradient-start),
@@ -38,6 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  margin: 0 30px;
 }
 
 .header .logo {
@@ -65,6 +68,7 @@ body {
 /* Main Content */
 .main-content {
   display: flex;
+  flex: 1;
   gap: 50px;
   max-width: 1100px;
   margin: 200px auto;
@@ -141,13 +145,12 @@ body {
 
 /* Footer */
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   text-align: center;
   padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.8); /* 背景色の調整 */
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  position: relative;
+  width: 100%;
 }
 
 /* Media Queries */
