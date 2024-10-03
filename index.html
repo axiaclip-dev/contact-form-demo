@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="AxiaClip Portfolio" />
+    <meta property="og:description" content="AxiaClipのデモサイト。シンプルでスタイリッシュなお問い合わせフォームを体験できます。" />
+    <meta property="og:image" content="assets/axiaclip-dev_ogp.png" />
+    <meta property="og:url" content="https://github.com/axiaclip-dev/contact-form-demo.git" />
+    <meta name="author" content="AxiaClip" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <title>AxiaClip Contact Form Demo</title>
+  </head>
+  <body>
+    <!-- Main wrapper starts here -->
+    <div class="wrapper">
+      <!-- Header section -->
+      <header class="header">
+        <!-- Logo -->
+        <a href="index.html">
+          <img class="logo" src="assets/axiaclip_logo.png" alt="" />
+        </a>
+        <div class="header-right">
+          <div><i class="fas fa-envelope"></i> contact@axiaclip-demo.com</div>
+          <div><i class="fas fa-phone"></i> (+81) 03-1234-5678</div>
+          <a href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </header>
+      <!-- Main content -->
+      <main class="main-content">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+        <!-- Hero Message -->
+        <div class="text-container">
+          <h1>新しいウェブ体験が、ここから始まる</h1>
+          <p>次世代のコンテンツ管理システムで、ビジネスを次のステージへ。フォームを通じてご意見をお寄せください。</p>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2024 - AxiaClip Portfolio</p>
+      </footer>
+    </div>
+  </body>
+</html>

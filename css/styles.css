@@ -1,0 +1,196 @@
+/* Common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: black;
+  --main-text-color: white;
+  --header-hover-color: #9370DB; /* ホバー時のライトブルーバイオレット */
+  --btn-bg-color: #4CAF50; /* ボタン背景 */
+  --btn-hover-bg-color: #45a049; /* ボタンホバー背景 */
+  --gradient-start: rgba(72, 61, 139, 0.8); /* グラデーションの開始色（深いブルー） */
+  --gradient-end: rgba(123, 104, 238, 0.9); /* グラデーションの終わり色（ライトパープル） */
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+  line-height: 1.6;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-start),
+    var(--gradient-end)
+    ),
+    url('../assets/background.png') no-repeat center/cover;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.header .logo {
+  width: 120px;
+}
+
+.header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header .header-right i {
+  margin-right: 5px;
+}
+
+.header .header-right a {
+  color: white;
+}
+
+.header .header-right a:hover {
+  color: var(--header-hover-color);
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 200px auto;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding: 0 40px;
+}
+
+.main-content form {
+  flex: 1;
+}
+
+.main-content .text-container {
+  flex: 1;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: 0;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+  display: block;
+  padding: 15px 20px;
+  border-radius: 20px;
+  width: 100%;
+  border: 0;
+  background-color: var(--btn-bg-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg-color);
+}
+
+/* Text Container */
+.text-container h1 {
+  font-size: 50px;
+  margin: 50px 0 20px;
+  line-height: 1.2;
+}
+
+.text-container {
+  font-size: 18px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.8); /* 背景色の調整 */
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header {
+    padding: 30px 10px 10px;
+  }
+
+  .header,
+  .header .header-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-content {
+    flex-direction: column-reverse;
+    justify-content: start;
+    margin: auto;
+    padding: 50px;
+  }
+
+  .main-content form,
+  .main-content .text-container {
+    width: 100%;
+  }
+
+  .main-content h1 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .main-content p {
+    display: none;
+  }
+}
+
+@media (max-height: 500px) {
+  .main-content {
+    margin: 0 auto;
+  }
+
+  .main-content h1 {
+    font-size: 40px;
+  }
+}
